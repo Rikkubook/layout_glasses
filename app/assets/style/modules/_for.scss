@@ -1,0 +1,90 @@
+/*for 迴圈*/
+
+//********************************************
+//   for 檔案 迴圈
+// ********************************************
+//用important 是為了要蓋掉bootstrap等設定，若不需要可以去掉；
+//px 請個別設定，因為 py質不一定為0
+
+$base: 4;
+$basePx: 4px;
+
+.mr-30{
+    margin-right: 30px;
+}
+
+
+@for $i from 0 through 30 {
+    .mb-#{$i * $base} {
+        margin-bottom: $i * $basePx;
+    }
+    .mr-#{$i * $base} {
+        margin-right: $i * $basePx;
+    }
+    .ml-#{$i * $base} {
+        margin-left: $i * $basePx;
+    }
+    .mt-#{$i * $base} {
+        margin-top: $i * $basePx;
+    }
+    .mx-#{$i * $base} {
+        margin-left: $i * $basePx;
+        margin-right: $i * $basePx;
+    }
+    .my-#{$i * $base} {
+        margin-top: $i * $basePx;
+        margin-bottom: $i * $basePx;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+    @for $i from 0 through 20 {
+        .mb-tb-#{$i * $base} {
+            margin-bottom: $i * $basePx;
+        }
+        .mr-tb-#{$i * $base} {
+            margin-right: $i * $basePx;
+        }
+        .ml-tb-#{$i * $base} {
+            margin-left: $i * $basePx;
+        }
+        .mt-tb-#{$i * $base} {
+            margin-top: $i * $basePx;
+        }
+        .mx-tb-#{$i * $base} {
+            margin-left: $i * $basePx;
+            margin-right: $i * $basePx;
+        }
+        .my-tb-#{$i * $base} {
+            margin-top: $i * $basePx;
+            margin-bottom: $i * $basePx;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    @for $i from 0 through 20 {
+        .mb-ph-#{$i * $base} {
+            margin-bottom: $i * $basePx;
+        }
+        .mr-ph-#{$i * $base} {
+            margin-right: $i * $basePx;
+        }
+        .ml-ph-#{$i * $base} {
+            margin-left: $i * $basePx;
+        }
+        .mt-ph-#{$i * $base} {
+            margin-top: $i * $basePx;
+        }
+        .mx-ph-#{$i * $base} {
+            margin-left: $i * $basePx;
+            margin-right: $i * $basePx;
+        }
+        .my-ph-#{$i * $base} {
+            margin-top: $i * $basePx;
+            margin-bottom: $i * $basePx;
+        }
+    }
+}

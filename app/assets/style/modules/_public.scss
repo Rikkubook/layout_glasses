@@ -1,0 +1,80 @@
+/*public 共用*/
+
+* {
+    outline: 1px solid red;
+}
+
+body,html {
+    font-family: "Roboto", Microsoft JhengHei, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container-lg {
+    max-width: 1540px;
+    margin: 0 auto;
+}
+
+/// 768~991 ipad
+@media (max-width: 991px) {
+    .container {
+        padding: 0 48px;
+    }
+}
+
+// 767
+@media (max-width: 767px) {
+    .container {
+        padding: 0 12px;
+    }
+}
+
+// =====font=====
+h2 {
+    font-size: 3rem;
+    color: $font-color;
+    text-align: center;
+    font-weight: 900;
+}
+h3 {
+    font-size: 1.5rem;
+    color: $font-color;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+// =====flex=====
+.d-f {
+    display: flex;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-c{
+    justify-content: center;
+}
+.ai-c {
+    align-items: center;
+}
+.ai-st {
+    align-items: start;
+}

@@ -1,0 +1,106 @@
+/*layout 外框  header*/
+
+.header {
+    padding: 30px 88px;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    top: 0;
+    background-color: $main-color;
+    .logo a {
+        background-image: url(../img/logo-new.png);
+        display: block;
+        width: 80px;
+        height: 50px;
+        text-indent: 102%;
+        white-space: nowrap;
+        overflow: hidden;
+        background-size: cover;
+    }
+    .header__menu {
+        max-width: 512px;
+        width: 100%;
+        li {
+            max-width: 80px;
+            width: 100%;
+            text-align: center;
+            a {
+                display: block;
+                color: #fff;
+            }
+        }
+        &.header__menu--active {
+            max-height: 250px;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+    }
+}
+.hamburger {
+    position: absolute;
+    left: 16px;
+    top: 28px;
+    display: none;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    .fa-bars {
+        opacity: 1;
+        transition: 0.4s;
+    }
+    .fa-times {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: 0.4s;
+    }
+    &.hamburger--active {
+        .fa-bars {
+            opacity: 0;
+            transition: 0.4s;
+        }
+        .fa-times {
+            opacity: 1;
+            transition: 0.4s;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .header {
+    padding: 48px 30px;
+    ul {
+        max-width: 440px;
+    }
+    }
+}
+@media (max-width: 767px) {
+    .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 16px;
+    .logo {
+        margin-bottom: 10px;
+    }
+    .header__menu {
+        display: block;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: 0.4s;
+        li {
+        border: 1px solid #fff;
+        max-width: 100%;
+        a {
+            padding: 16px;
+        }
+    }
+    }
+    }  
+    .hamburger {
+        display: block;
+    }
+}

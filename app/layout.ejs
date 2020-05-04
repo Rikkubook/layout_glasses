@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+    <link rel="stylesheet" href="./assets/style/index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header d-f jc-sb po-r po-f">
+      <!-- 手機版 漢堡 開始 -->
+      <div class="hamburger">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </div>
+      <!-- 手機版 漢堡 結束 -->
+
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="./img/logo-new.png" alt="logo" />
+          logo
+        </a>
+      </h1>
+
+      <ul class="header__menu d-f jc-sb ai-c">
+        <li><a href="">系列鏡框</a></li>
+        <li><a href="">門市據點</a></li>
+        <li><a href="">部落格</a></li>
+        <li><a href="">常見問題</a></li>
+      </ul>
+
+    </header>
+
+    <%- contents %>
+
+    <footer class="footer">
+      footer
+    </footer>
+  </body>
+  <script src="./assets/js/index.js"></script>
+</html>
