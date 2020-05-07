@@ -412,3 +412,46 @@
         }
     }
 }
+
+// contact
+.contact{
+    padding: 64px 0px 92px;
+    background:  #AA06010D;
+    p{
+        font-size: 1.25rem;
+    }
+    label{
+        display: inline-block;
+    }
+    input{
+        width: 100%;
+        padding: 14px 16px;
+        border: 1px solid #000;
+        background: transparent;
+    }
+    input[type=checkbox] { 
+        width: auto;
+        display: none;
+    } 
+    .form__checkbox{
+        &:before{
+            content: "";
+            display: inline-block;
+            vertical-align: sub;
+            width: 20px;
+            height: 20px;
+            margin-right: 4px;
+            border:1px solid #000;
+        }
+    }
+    button{
+        font-size: 1rem;
+        display:block;
+        border: none;
+        color: #fff;
+        background-color: $main-color;
+        width: 180px;
+        padding: 16px;
+        margin: 42px auto 0px;
+    }
+}

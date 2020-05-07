@@ -1,7 +1,7 @@
 /*public 共用*/
 
 * {
-    outline: 1px solid red;
+    // outline: 1px solid red;
 }
 
 body,html {
@@ -16,6 +16,10 @@ body,html {
 }
 .container-lg {
     max-width: 1540px;
+    margin: 0 auto;
+}
+.container-sm {
+    max-width: 792px;
     margin: 0 auto;
 }
 
