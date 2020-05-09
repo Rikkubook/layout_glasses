@@ -1282,9 +1282,6 @@ a {
 
 /* var  變數*/
 /*public 共用*/
-* {
-  outline: 1px solid red; }
-
 body {
   font-family: "Roboto", Microsoft JhengHei, sans-serif;
   font-size: 16px;
