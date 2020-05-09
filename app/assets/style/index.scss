@@ -97,7 +97,18 @@
             .classic__listDirector {
                     text-align: right;
                 }
+            img:nth-child(2){
+                display: none;
             }
+            &:hover{
+                > img:first-child{
+                    display: none;
+                }
+                > img:nth-child(2){
+                    display: block;
+                } 
+            }
+        }
     }
     h3 {
         width: 100%;
@@ -226,6 +237,17 @@
         line-height: 1.5;
         color: $main-color;
         background-color: #fff;
+        &:before,&:after{
+            content: "MORE";
+            position: absolute;
+            bottom: 5px;
+            opacity: 0.8;
+            transition: 0.5s;
+        }
+        &:after{
+            left: 32px;
+            opacity: 0.5;
+        }
         .coBrand__buttonArrow {
             display: inline-block;
             vertical-align: middle;
@@ -233,6 +255,18 @@
             height: 48px;
             background-image: url(../img/icon-arrow.svg);
             background-size: cover;
+            transition: 0.5s;
+        }
+        &:hover{
+            &:before{
+                bottom: 80px;
+            }
+            &:after{
+                bottom: 150px;
+            }
+            & .coBrand__buttonArrow{
+                transform: translateX(10px);
+            }
         }
     }
 }
@@ -331,6 +365,12 @@
             font-size: 1.625rem;
             color: $main-color;
             background-color: #fff;
+            &:before,&:after{
+                bottom: 4px;
+            }
+            &:after{
+                left: 14px;
+            }
             .coBrand__buttonArrow {
                 display: inline-block;
                 vertical-align: middle;
@@ -338,6 +378,17 @@
                 height: 27px;
                 background-image: url(../img/icon-arrow.svg);
                 background-size: cover;
+            }
+            &:hover{
+                &:before{
+                    bottom: 40px;
+                }
+                &:after{
+                    bottom: 65px;
+                }
+                & .coBrand__buttonArrow{
+                    transform: translateX(10px);
+                }
             }
         }
     }
@@ -445,6 +496,7 @@
         }
     }
     button{
+        font-family: "Roboto", Microsoft JhengHei, sans-serif;
         font-size: 1rem;
         display:block;
         border: none;
@@ -453,5 +505,10 @@
         width: 180px;
         padding: 16px;
         margin: 42px auto 0px;
+        &:hover{
+            background-color: $sec-color;
+            transition: 0.3s;
+            cursor: pointer;
+        }
     }
 }
