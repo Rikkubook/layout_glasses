@@ -1,9 +1,4 @@
-@import "modules/reset";
-@import "modules/for";
-@import "modules/var";
-@import "modules/public";
-@import "partials/layout";
-
+/*首頁*/
 
 /*banner*/
 .banner {
@@ -344,7 +339,6 @@
         }
     }
 }
-
 @media (max-width: 767px) {
     .coBrand{
         padding-bottom: 189px;
@@ -436,7 +430,6 @@
         }
     }
 }
-
 @media (max-width: 991px) {
     .recommend__list{
         flex-wrap: wrap;
@@ -448,7 +441,6 @@
         }
     }
 }
-
 @media (max-width: 767px) {
     .recommend{
         margin-top: -132px;

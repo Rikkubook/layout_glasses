@@ -1282,6 +1282,9 @@ a {
 
 /* var  變數*/
 /*public 共用*/
+* {
+  outline: 1px solid red; }
+
 body {
   font-family: "Roboto", Microsoft JhengHei, sans-serif;
   font-size: 16px;
@@ -1319,6 +1322,10 @@ h3 {
   text-align: center;
   font-weight: 700; }
 
+h4 {
+  font-size: 1.25rem;
+  font-weight: 700; }
+
 @media (max-width: 991px) {
   h2 {
     font-size: 2rem; }
@@ -1333,6 +1340,22 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+.fx-dc {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.jc-fs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.jc-fe {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .jc-sb {
   -webkit-box-pack: justify;
@@ -1349,10 +1372,15 @@ h3 {
       -ms-flex-align: center;
           align-items: center; }
 
-.ai-st {
+.ai-fs {
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start; }
+          align-items: flex-start; }
+
+.ai-fe {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
 
 /*layout 外框  header*/
 .header {
@@ -1375,10 +1403,10 @@ h3 {
     max-width: 512px;
     width: 100%; }
     .header .header__menu li {
-      max-width: 80px;
       width: 100%;
       text-align: center; }
       .header .header__menu li a {
+        padding: 0 32px;
         display: block;
         color: #fff; }
     .header .header__menu.header__menu--active {
@@ -1562,6 +1590,7 @@ h3 {
     right: 40px;
     bottom: 0px; } }
 
+/*首頁*/
 /*banner*/
 .banner {
   padding-top: 110px;
@@ -1974,4 +2003,102 @@ h3 {
       transition: 0.3s;
       cursor: pointer; }
 
-/*# sourceMappingURL=index.css.map */
+/*常見問題*/
+.questions__banner {
+  padding-top: 110px;
+  background-image: url(../img/bg-qa.png);
+  height: 304px;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 80px; }
+  .questions__banner .container {
+    width: 100%; }
+  .questions__banner h2 {
+    font-size: 4rem;
+    color: #000000;
+    text-align: left;
+    height: 100%; }
+  .questions__banner img {
+    vertical-align: baseline; }
+
+.questions__content {
+  margin-bottom: 156px; }
+  .questions__content h3 {
+    font-size: 2rem;
+    color: #000000;
+    text-align: left; }
+
+.collapse h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 22px;
+  border: 1px solid #000; }
+  .collapse h4::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 35px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/ic_keyboard_arrow_down_24px.svg); }
+
+.collapse div {
+  border: 1px solid #000;
+  border-bottom: 0;
+  border-top: 0;
+  background-color: #F2F2F2;
+  max-height: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  overflow: hidden; }
+  .collapse div p {
+    padding: 38px 22px; }
+
+.collapse__item.is-focus h4::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center; }
+
+.collapse__item.is-focus div {
+  max-height: 400px;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s; }
+
+@media (max-width: 991px) {
+  .questions__banner {
+    margin-top: 146px; }
+    .questions__banner h2 {
+      font-size: 3rem; }
+    .questions__banner img {
+      width: 48px; }
+  .questions__content {
+    margin-bottom: 104px; }
+    .questions__content h3 {
+      font-size: 1.75rem; }
+  .collapse h4 {
+    padding: 24px 16px; }
+  .collapse div p {
+    padding: 24px 16px; } }
+
+@media (max-width: 767px) {
+  .questions__banner {
+    height: 143px;
+    margin-top: 80px;
+    margin-bottom: 28px; }
+  .questions__content {
+    margin-bottom: 56px; }
+  .collapse h4 {
+    padding: 16px 16px; }
+  .collapse div p {
+    padding: 16px 16px; } }
+
+/*# sourceMappingURL=all.css.map */

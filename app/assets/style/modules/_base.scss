@@ -1,7 +1,7 @@
 /*public 共用*/
 
 * {
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 
 body{
@@ -51,6 +51,11 @@ h3 {
     font-weight: 700;
 }
 
+h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
 @media (max-width: 991px) {
     h2 {
         font-size: 2rem;
@@ -64,21 +69,4 @@ h3 {
     h2 {
         font-size: 1.5rem;
     }
-}
-
-// =====flex=====
-.d-f {
-    display: flex;
-}
-.jc-sb{
-    justify-content: space-between;
-}
-.jc-c{
-    justify-content: center;
-}
-.ai-c {
-    align-items: center;
-}
-.ai-st {
-    align-items: start;
 }

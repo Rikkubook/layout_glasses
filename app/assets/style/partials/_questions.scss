@@ -1,0 +1,123 @@
+/*常見問題*/
+
+.questions__banner{
+    padding-top: 110px;
+    background-image: url(../img/bg-qa.png);
+    height: 304px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 80px;
+    .container{
+        width: 100%;
+    }
+    h2{
+        font-size: 4rem;
+        color:#000000;
+        text-align: left;
+        height: 100%;
+    }
+    img{
+        vertical-align: baseline
+    }
+}
+.questions__content{
+    margin-bottom: 156px;
+    h3{
+        font-size: 2rem;
+        color: #000000;
+        text-align: left;
+    }
+}
+
+// 收合
+.collapse{
+    h4{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 22px;
+        border: 1px solid #000;
+        &::after{
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 35px;
+            background-size: cover;
+            background-position: center center;
+            background-image: url(../img/ic_keyboard_arrow_down_24px.svg);
+        }
+    }
+    div{
+        border: 1px solid #000;
+        border-bottom: 0;
+        border-top: 0;
+        background-color: #F2F2F2;
+        max-height: 0;
+        transition: 0.4s;
+        overflow: hidden;
+        p{
+            padding: 38px 22px;
+        }
+    }
+}
+.collapse__item.is-focus{
+    h4{
+        &::after{
+            transform: rotate(180deg) ;
+            transform-origin: center center;
+        }
+    }
+    div{
+        max-height: 400px;
+        transition: 0.4s;
+    }
+}
+
+@media (max-width: 991px) {
+    .questions__banner{
+        margin-top: 146px;
+        h2{
+            font-size: 3rem;
+        }
+        img{
+            width: 48px;
+        }
+    }
+    .questions__content{
+        margin-bottom: 104px;
+        h3{
+            font-size: 1.75rem;
+        }
+    }
+
+    .collapse{
+        h4{
+            padding: 24px 16px;
+        }
+        div{
+            p{
+                padding: 24px 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .questions__banner{
+        height: 143px;
+        margin-top: 80px;
+        margin-bottom: 28px;
+    }
+    .questions__content{
+        margin-bottom: 56px;
+    }
+    .collapse{
+        h4{
+            padding: 16px 16px;
+        }
+        div{
+            p{
+                padding: 16px 16px;
+            }
+        }
+    }
+}

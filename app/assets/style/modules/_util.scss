@@ -1,0 +1,29 @@
+
+// =====flex=====
+.d-f {
+    display: flex;
+}
+.fx-dc{
+    flex-direction: column;
+}
+.jc-fs{
+    justify-content: flex-start;
+}
+.jc-fe{
+    justify-content: flex-end;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-c{
+    justify-content: center;
+}
+.ai-c {
+    align-items: center;
+}
+.ai-fs {
+    align-items: flex-start;
+}
+.ai-fe {
+    align-items: flex-end;
+}

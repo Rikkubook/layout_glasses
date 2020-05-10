@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
-    <link rel="stylesheet" href="./assets/style/index.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
   </head>
 
@@ -30,14 +30,48 @@
         <li><a href="">系列鏡框</a></li>
         <li><a href="">門市據點</a></li>
         <li><a href="">部落格</a></li>
-        <li><a href="">常見問題</a></li>
+        <li><a href="questions.html">常見問題</a></li>
       </ul>
 
     </header>
 
     <%- contents %>
 
-
+    <footer class="footer">
+      <div class="container">
+          <div class="footer__top mb-32 mb-ph-0">
+              <ul class="footer__top_map">
+                  <li><a href="">首頁</a></li>
+                  <li><a href="">系統維護</a></li>
+                  <li><a href="">門市據點</a></li>
+                  <li><a href="">部落格</a></li>
+                  <li><a href="">常見問題</a></li>
+              </ul>
+              <ul class="footer__top__media">
+                  <li><a href=""><img src="./assets/img/ic_social_fb.svg" alt="FB"></a></li>
+                  <li><a href=""><img src="./assets/img/ic_social_ig.svg" alt="IG"></a></li>
+                  <li><a href=""><img src="./assets/img/ic_social_line.svg" alt="Line"></a></li>
+              </ul>
+          </div>
+          <div class="footer__middle mb-16">
+              <ul>
+                  <li class="mb-16"><img src="./assets/img/ic_phone_48px.svg" alt="phone">0800-000-000</li>
+                  <li class="mb-16"> <img src="./assets/img/ic_mail_outline_24px.svg" alt="mail">glasses@business.com</li>
+              </ul>
+          </div>
+          <div class="footer__bottom">
+              <div class="footer__bottom__left">
+                  <img class="mr-16" src="./assets/img/logo-new.png" alt="logo">
+                  <p class="mb-ph-8">Copyright © 2020 Glasses.All rights reserved.</p>
+              </div>
+                  <ul class="footer__bottom__right">
+                      <li class="mb-ph-8"><a href="">隱私權政策</a></li>
+                      <li ><a href="">服務政策</a></li>
+                  </ul>
+          </div>
+  
+      </div>
+    </footer>
   </body>
   <script src="./assets/js/index.js"></script>
 </html>
